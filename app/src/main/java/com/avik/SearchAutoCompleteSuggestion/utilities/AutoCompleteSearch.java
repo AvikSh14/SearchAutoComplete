@@ -28,7 +28,7 @@ public class AutoCompleteSearch {
         List<String> suggestions = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         for(char ch : prefix.toCharArray()){
-            int index = ch - 'a';
+            int index = (int) ch;
             if(cur.children[index]==null){
                 System.out.println("No words found");
                 return suggestions;
@@ -56,10 +56,10 @@ public class AutoCompleteSearch {
             suggestions.add(sb.toString());
         }
 
-        for(int i=0; i<26; i++){
+        for(int i=0; i<ASCII_VALUE_COUNT; i++){
             if(curNode.children[i]!=null){
                 Trie temp = curNode.children[i];
-                sb.append((char) (i+'a'));
+                sb.append((char) (i));
                 getWords(temp, suggestions, set, sb);
                 sb.setLength(sb.length()-1);
             }

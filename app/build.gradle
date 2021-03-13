@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
@@ -7,12 +7,11 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.avik.SearchAutoCompleteSuggestion"
+//        applicationId "com.avik.SearchAutoCompleteSuggestion"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
+        versionCode rootProject.ext.libVersionCode
+        versionName rootProject.ext.libVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -26,6 +25,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "SearchAutoComplete-${variant.name}-${defaultConfig.versionName}.aar"
+        }
+    }
+
 }
 
 dependencies {
