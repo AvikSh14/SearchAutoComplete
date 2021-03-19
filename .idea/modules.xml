@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SearchAutoCompleteSuggestion.iml" filepath="$PROJECT_DIR$/.idea/modules/SearchAutoCompleteSuggestion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SearchAutoCompleteSuggestion.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SearchAutoCompleteSuggestion.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/SearchAutoCompleteSuggestion.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/SearchAutoCompleteSuggestion.library.iml" />
     </modules>
   </component>
 </project>
