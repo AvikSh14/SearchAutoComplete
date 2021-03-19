@@ -1,1 +1,1 @@
-# SearchAutoComplete
+Use getSuggestedWordsFromList(List<String> words, String typedWord) method from SearchController to get suggested words. Pass word list and the typed word to that function and this will suggest you words based on the list of words passed to the function.
