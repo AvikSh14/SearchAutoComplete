@@ -15,6 +15,7 @@ buildscript {
         libVersionCode = 1
         libVersionName = '1.0.0'
     }
+
 }
 
 allprojects {
@@ -27,3 +28,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
